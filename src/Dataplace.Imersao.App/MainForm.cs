@@ -1,4 +1,5 @@
 ﻿using Dataplace.Imersao.Presentation.Views;
+using Dataplace.Imersao.Presentation.Views.Orcamentos.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,10 @@ namespace Dataplace.Imersao.App
 
             AddMenu(new ToolStripMenuItem("Cancelar orçamentos em aberto", null, (object sender, EventArgs e) => {
                 Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<CancelarOrcamentoView>();
+            }), TipoMenuEnun.Ferramenta);
+
+            AddMenu(new ToolStripMenuItem("Fechar orçamentos em aberto", null, (object sender, EventArgs e) => {
+                Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<FecharOrcamentoView>();
             }), TipoMenuEnun.Ferramenta);
         }
     }

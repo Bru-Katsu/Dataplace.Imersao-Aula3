@@ -31,24 +31,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
-    <Reference Include="C1.Win.C1Command.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
-    <Reference Include="C1.Win.C1Input.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
-    <Reference Include="C1.Win.C1TrueDBGrid.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Dataplace.Core.Lib">
       <HintPath>U:\Pack 2022.R3-S4\Install\Dataplace.Core.Lib.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Dataplace.Core.win">
       <HintPath>U:\Pack 2022.R3-S4\Install\Dataplace.Core.win.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="dp.library.05">
       <HintPath>U:\Pack 2022.R3-S4\Install\dp.library.05.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="MediatR, Version=9.0.0.0, Culture=neutral, PublicKeyToken=bb9a41a5e8aaa7e2, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MediatR.9.0.0\lib\net461\MediatR.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="MediatR.Extensions.AttributedBehaviors, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MediatR.Extensions.AttributedBehaviors.1.0.2\lib\netstandard2.0\MediatR.Extensions.AttributedBehaviors.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -91,6 +104,12 @@
     <Compile Include="Views\Faturamento\Reports\TotalCondicaoPagamentoView.Designer.cs">
       <DependentUpon>TotalCondicaoPagamentoView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Orcamentos\Tools\FecharOrcamentoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Orcamentos\Tools\FecharOrcamentoView.Designer.cs">
+      <DependentUpon>FecharOrcamentoView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -104,11 +123,15 @@
     <EmbeddedResource Include="Views\Faturamento\Reports\TotalCondicaoPagamentoView.resx">
       <DependentUpon>TotalCondicaoPagamentoView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Orcamentos\Tools\FecharOrcamentoView.resx">
+      <DependentUpon>FecharOrcamentoView.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dataplace.Imersao.Core\Dataplace.Imersao.Core.csproj">
       <Project>{a99dc1df-d3c3-4d3b-8f10-e98c014c1c6b}</Project>
       <Name>Dataplace.Imersao.Core</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
